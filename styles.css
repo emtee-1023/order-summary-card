@@ -1,18 +1,28 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
     font-family: 'Red Hat Display', sans-serif;
     background-color: hsl(225, 100%, 94%);
     background-image: url(/images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
+    background-size: contain;
+    
 }
 
-.container {
+.visually-hidden {
+    display: none;
+}
+
+article.card {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
     width: 350px;
-    margin: auto;
-    margin-top: 10px;
     border-radius: 10px;
 
 }
@@ -22,7 +32,7 @@ body {
     border-radius: 10px 10px 0px 0px;
 }
 
-.order-summ {
+h1.order-summ {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
     font-size: larger;
@@ -30,7 +40,7 @@ body {
     text-align: center;
 }
 
-.paragraph {
+p.paragraph {
     font-weight: 500;
     color: hsl(224, 23%, 55%);
     font-size: small;
@@ -39,7 +49,7 @@ body {
     line-height: 1.5;
 }
 
-.plan {
+section.plan {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,7 +61,7 @@ body {
     border-radius: 10px;
 }
 
-.music-container {
+.music-icon {
     background-color: hsl(225, 100%, 94%);
     border-radius: 50%;
     height: 100%;
@@ -77,16 +87,16 @@ body {
     font-size: smaller;
 }
 
-.change-container {
+.change-btn {
     flex-grow: 1;
     color: hsl(245, 75%, 52%);
     text-decoration: underline;
-    cursor: url('images/hand-pointer-regular.svg'),pointer;
+    cursor: url('images/cursor.cur'),pointer;
     font-weight: 700;
     font-size: smaller;
 }
 
-.change-container:hover {
+.change-btn:hover {
     color: hsla(245, 75%, 52%, 0.541);
     text-decoration: none;
 }
@@ -102,7 +112,7 @@ body {
     font-size: small;
     border: 0px;
     border-radius: 10px;
-    cursor: url('images/hand-pointer-regular.svg'),pointer;
+    cursor: url('images/cursor.cur'),pointer;
 }
 
 .proceed-button:hover {
