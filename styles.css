@@ -22,14 +22,14 @@ article.card {
     flex-direction: column;
     align-items: center;
     background-color: hsl(225, 100%, 98%);
-    width: 350px;
+    max-width: 350px;
     border-radius: 10px;
     box-shadow: 0px 5px 10px 2px hsla(245, 75%, 52%, 0.299);
 
 }
 
 .hero-img {
-    width: 350px;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 
