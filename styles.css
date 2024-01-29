@@ -7,7 +7,7 @@ body {
     margin: 0;
     font-family: 'Red Hat Display', sans-serif;
     background-color: hsl(225, 100%, 94%);
-    background-image: url(/images/pattern-background-desktop.svg);
+    background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     background-size: contain;
     
@@ -24,6 +24,7 @@ article.card {
     background-color: hsl(225, 100%, 98%);
     width: 350px;
     border-radius: 10px;
+    box-shadow: 0px 5px 10px 2px hsla(245, 75%, 52%, 0.299);
 
 }
 
@@ -32,7 +33,7 @@ article.card {
     border-radius: 10px 10px 0px 0px;
 }
 
-h1.order-summ {
+h2.order-summ {
     font-weight: 900;
     color: hsl(223, 47%, 23%);
     font-size: larger;
@@ -73,7 +74,7 @@ section.plan {
     margin-right: 60px;
 }
 
-.plan-details .plan-type {
+.plan-details h3.plan-type {
     margin: 0px;
     font-weight: 900;
     color: hsl(223, 47%, 23%);
@@ -113,6 +114,7 @@ section.plan {
     border: 0px;
     border-radius: 10px;
     cursor: url('images/cursor.cur'),pointer;
+    box-shadow: 0px 5px 10px 2px hsla(245, 75%, 52%, 0.299);
 }
 
 .proceed-button:hover {
